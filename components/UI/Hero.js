@@ -32,7 +32,13 @@ const hero = (props) => (
   color: rgba(255, 255, 255, 0.85);
  }
 
- @media (min-width: 576px){
+ @media (min-width: 768px){
+  .hero-text {
+     font-size: 24px;
+  }
+ }
+
+  @media (min-width: 992px){
   .hero-text {
      font-size: ${props.fontSize ? props.fontSize : '20px'};
   }
