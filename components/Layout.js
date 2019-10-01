@@ -1,6 +1,6 @@
 import Header from './Header';
 
-const headerHeight = '100px';
+const headerHeight = '80px';
 
 const layoutStyle = {
 	margin: 0,
@@ -10,7 +10,7 @@ const layoutStyle = {
 
 const Layout = (props) => (
 	<>
-		<Header backgroundColor="#ccc" height={headerHeight}>
+		<Header marginTop={headerHeight} backgroundColor="#ccc" height={headerHeight}>
 			This is the header.
 		</Header>
 		<div style={layoutStyle}>{props.children}</div>
